@@ -11,7 +11,7 @@
 			<p class="text-success">{{msg}}</p>
 			{% endfor %}
 			<form method="POST">
-					{% csrf_token %}
+				{% csrf_token %}
 					<div class="form-group">
 						{{ formtohtml | crispy }}	
 					</div>
