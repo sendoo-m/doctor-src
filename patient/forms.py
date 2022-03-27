@@ -1,6 +1,5 @@
 from dataclasses import fields
 from datetime import date
-from tkinter import Widget
 from django import forms
 from .models import Add_patient
 from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget # to Import edit text box and tool
