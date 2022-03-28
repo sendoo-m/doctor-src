@@ -92,10 +92,10 @@ WSGI_APPLICATION = 'doctor.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dbq6n1bn56pb8g', #elgafydb
-        'USER': 'ctwpcgvcygsyme',#postgres
-        'PASSWORD': 'c747ef56e1e790dd21b712148f8dffcfb805defba76de3518fb6afa7b828cc6b',#159850!@#se
-        'HOST': 'heroku pg:psql postgresql-regular-17769 --app doctor-src',#localhost
+        'NAME': 'dd0l4her25ncct', #elgafydb
+        'USER': 'covevgnhvvfxqy',#postgres
+        'PASSWORD': 'b3976cce550b304c82711e050ede98ed2772622bfaf8a555973f5c725a48866f',#159850!@#se
+        'HOST': 'ec2-54-173-77-184.compute-1.amazonaws.com',#localhost
         'PORT': '5432',
     }
 }
