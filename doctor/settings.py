@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-0@%@xoyy%g)sxb@=ohoo!$qvg@b2q@zy460tvlz6_$r-m9cnzr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['doctor-src.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -92,10 +92,10 @@ WSGI_APPLICATION = 'doctor.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dd0l4her25ncct', #elgafydb
-        'USER': 'covevgnhvvfxqy',#postgres
-        'PASSWORD': 'b3976cce550b304c82711e050ede98ed2772622bfaf8a555973f5c725a48866f',#159850!@#se
-        'HOST': 'ec2-54-173-77-184.compute-1.amazonaws.com',#localhost
+        'NAME': 'dflvgdk796dhdv', #elgafydb
+        'USER': 'xvulqaytpzfeds',#postgres
+        'PASSWORD': 'dcd5fc18143228a38ee346505582bec29a5658f9606a6bcce632d192c7f0c2bb',#159850!@#se
+        'HOST': 'ec2-54-157-79-121.compute-1.amazonaws.com',#localhost
         'PORT': '5432',
     }
 }

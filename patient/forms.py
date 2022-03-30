@@ -1,7 +1,7 @@
 from dataclasses import fields
 from datetime import date
 from django import forms
-from .models import Add_patient
+from .models import Add_patient, Patient
 from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget # to Import edit text box and tool
 
 class CalDate(forms.DateInput):
@@ -31,7 +31,7 @@ class Update_PatientForm(forms.ModelForm):
     next_visit_date = forms.DateField(widget=CalDate, label='Next Visit Date')
     note            = forms.CharField(widget=SummernoteWidget(attrs={'summernote': {'width': '100%', 'height': '300px'}}), label='Dr.Notes')
     class Meta:
-        model = Add_patient
+        model = Patient
         fields = ('date','age','diagnosis','wt','temp','treatment','next_visit_date','note')
-        verbose_name = 'update_pastient'
-        verbose_name_plural = 'update_pastients'
+        verbose_name = 'update_patient'
+        verbose_name_plural = 'update_patients'
