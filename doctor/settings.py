@@ -83,22 +83,22 @@ WSGI_APPLICATION = 'doctor.wsgi.application'
 
 
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'base_site.sqlite3'),
-#     }
-# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dflvgdk796dhdv', #elgafydb
-        'USER': 'xvulqaytpzfeds',#postgres
-        'PASSWORD': 'dcd5fc18143228a38ee346505582bec29a5658f9606a6bcce632d192c7f0c2bb',#159850!@#se
-        'HOST': 'ec2-54-157-79-121.compute-1.amazonaws.com',#localhost
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'base_site.sqlite3'),
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'dflvgdk796dhdv', #elgafydb
+#         'USER': 'xvulqaytpzfeds',#postgres
+#         'PASSWORD': 'dcd5fc18143228a38ee346505582bec29a5658f9606a6bcce632d192c7f0c2bb',#159850!@#se
+#         'HOST': 'ec2-54-157-79-121.compute-1.amazonaws.com',#localhost
+#         'PORT': '5432',
+#     }
+# }
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
