@@ -47,22 +47,22 @@ class Doctor(models.Model):
         verbose_name_plural = "Doctor"
 
 
-# class Patient(models.Model):
-#     date            = models.DateField(verbose_name='Today Date')
-#     age             = models.CharField(max_length=20, verbose_name='Age' ,null=True, blank=True)
-#     diagnosis       = models.TextField(max_length=1200, verbose_name='Diagnosis', null=True, blank=True)
-#     wt              = models.CharField(max_length=20, verbose_name='Wt' ,null=True, blank=True)
-#     temp            = models.CharField(max_length=20, verbose_name='Temp', null=True, blank=True)
-#     treatment       = models.TextField(max_length=1200, verbose_name='Treatment', null=True, blank=True)
-#     note            = models.TextField(max_length=1200, verbose_name='Dr. Notes', null=True, blank=True)
+class Patient(models.Model):
+    date            = models.DateField(verbose_name='Today Date')
+    age             = models.CharField(max_length=20, verbose_name='Age' ,null=True, blank=True)
+    diagnosis       = models.TextField(max_length=1200, verbose_name='Diagnosis', null=True, blank=True)
+    wt              = models.CharField(max_length=20, verbose_name='Wt' ,null=True, blank=True)
+    temp            = models.CharField(max_length=20, verbose_name='Temp', null=True, blank=True)
+    treatment       = models.TextField(max_length=1200, verbose_name='Treatment', null=True, blank=True)
+    note            = models.TextField(max_length=1200, verbose_name='Dr. Notes', null=True, blank=True)
 
     
-#     def __str__(self):
-#         return self.name or ''
+    def __str__(self):
+        return self.name or ''
              
-#     class Meta:
-#         verbose_name = "patient"
-#         verbose_name_plural = "patient"
+    class Meta:
+        verbose_name = "patient"
+        verbose_name_plural = "patient"
 
 class Cashf(models.Model):
     doctor          = models.ForeignKey(Doctor, verbose_name='Doctor Cashf', on_delete=models.CASCADE)
