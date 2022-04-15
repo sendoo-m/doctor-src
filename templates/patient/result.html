@@ -56,7 +56,7 @@
 													</tr>                                
 													<tr>
 														<th scope="col">Diagnosis</th>
-														<td>{{regdr.diagnosis}}</td>
+														<td>{{regdr.diagnosis |safe}}</td>
 													</tr>                                
 													<tr>
 														<th scope="col">wt</th>
@@ -68,7 +68,7 @@
 													</tr>                                
 													<tr>
 														<th scope="col">Treatment</th>
-														<td>{{regdr.treatment}}</td>
+														<td>{{regdr.treatment |safe}}</td>
 													</tr>                                
 													<tr>
 														<th scope="col">Next Visit</th>
@@ -76,7 +76,7 @@
 													</tr>
 													<tr>
 														<th scope="col">Notes</th>
-														<td>{{regdr.note}}</td>
+														<td>{{regdr.note|safe}}</td>
 													</tr>
 													<tr>
 														<th scope="col">Action</th>
